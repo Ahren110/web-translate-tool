@@ -1,6 +1,6 @@
 {
   "name": "web-translate-tool",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "一个简单的前端翻译js库, 基于jsonp, via有道翻译api",
   "main": "index.js",
   "scripts": {
