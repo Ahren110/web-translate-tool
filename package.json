@@ -18,5 +18,8 @@
   "license": "MIT",
   "dependencies": {
     "jsonp": "^0.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.9"
   }
 }
