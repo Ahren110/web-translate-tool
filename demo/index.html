@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" media="all" href="./json.human.css">
   <style type="text/css" media="all">
-      body{
-          text-align: center;
+      #container{
+          width: 900px;
+          margin: 0 auto;
       }
   </style>
 </head>
@@ -14,10 +16,12 @@
         <h1 id="">web-translate-tool demo</h1>      
         <input type="datetime" name="keywords" id="keywords" value="" placeholder="keywords"/>
         <button id="btn">翻译</button>
-        <p id="result">
+        <h2>api format:</h2>
+        <div id="result">
             
-        </p>
+        </div>
     </div>
+    <script src="./json.human.js" type="text/javascript" charset="utf-8"></script>
     <script src="../dist/web-translate-tool.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
         var btn = document.getElementById("btn");
@@ -27,9 +31,9 @@
             var keywords = input.value;
             var translate = new Translate('982783138', 5000);
             translate.go(keywords, function(err, data){
-                var dataStr = JSON.stringify(data);
-                console.log(dataStr);
-                result.innerHTML = dataStr;
+                var dataNode = JsonHuman.format(data);
+                result.innerHTML = "";
+                result.appendChild(dataNode);
             })
         }
     </script>
