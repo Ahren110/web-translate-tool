@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css" media="all">
+      body{
+          text-align: center;
+      }
+  </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="">web-translate-tool demo</h1>      
+        <input type="datetime" name="keywords" id="keywords" value="" placeholder="keywords"/>
+        <button id="btn">翻译</button>
+        <p id="result">
+            
+        </p>
+    </div>
+    <script src="../dist/web-translate-tool.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var btn = document.getElementById("btn");
+        var input = document.getElementById("keywords");
+        var result = document.getElementById("result");
+        btn.onclick = function(){
+            var keywords = input.value;
+            var translate = new Translate('982783138', 5000);
+            translate.go(keywords, function(err, data){
+                var dataStr = JSON.stringify(data);
+                console.log(dataStr);
+                result.innerHTML = dataStr;
+            })
+        }
+    </script>
+</body>
+</html>

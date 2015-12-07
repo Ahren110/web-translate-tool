@@ -1,0 +1,1 @@
+global.Translate = require("./index.js");
