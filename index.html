@@ -28,9 +28,9 @@
         var btn = document.getElementById("btn");
         var input = document.getElementById("keywords");
         var result = document.getElementById("result");
+        var translate = new Translate('982783138', 5000);
         btn.onclick = function(){
             var keywords = input.value;
-            var translate = new Translate('982783138', 5000);
             translate.go(keywords, function(err, data){
                 if(!err){
                     var dataNode = JsonHuman.format(data);
