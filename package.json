@@ -9,10 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.coding.net:huzhihang/web-translate-tool.git"
+    "url": "git@github.com:hu-zhi-hang/web-translate-tool.git"
   },
   "keywords": [
-    "translate"
+    "translate",
+    "youdao"
   ],
   "author": "huzhihang",
   "license": "MIT",
