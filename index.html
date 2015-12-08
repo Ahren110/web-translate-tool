@@ -16,7 +16,8 @@
         <h1 id="">web-translate-tool demo</h1>      
         <input type="datetime" name="keywords" id="keywords" value="" placeholder="keywords"/>
         <button id="btn">翻译</button>
-        <h2>api formation:(也可以打开控制台查看数据结构,我将它打印了出来)</h2>
+        <h2>api formation:</h2>
+        <p>(也可以打开控制台查看数据结构,我将它打印了出来)</p>
         <div id="result">
             
         </div>
@@ -31,10 +32,12 @@
             var keywords = input.value;
             var translate = new Translate('982783138', 5000);
             translate.go(keywords, function(err, data){
-                var dataNode = JsonHuman.format(data);
-                result.innerHTML = "";
-                result.appendChild(dataNode);
-                console.log(data);
+                if(!err){
+                    var dataNode = JsonHuman.format(data);
+                    result.innerHTML = "";
+                    result.appendChild(dataNode);
+                    console.log(data);    
+                }
             })
         }
     </script>
