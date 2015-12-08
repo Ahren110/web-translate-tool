@@ -17,7 +17,6 @@
   "author": "huzhihang",
   "license": "MIT",
   "dependencies": {
-    "jsonp": "^0.2.0",
     "web-translate-tool": "^0.2.0"
   }
 }

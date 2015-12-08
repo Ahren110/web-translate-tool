@@ -3,7 +3,7 @@
 
 **使用前需要先[申请有道翻译apikey](http://fanyi.youdao.com/openapi?path=data-mode)**
 
-这里有一个[DEMO](#)
+这里有一个[DEMO](http://web-translate-tool.coging.io)
 ## 安装
 `npm install web-translate-tool`
 ## 使用
