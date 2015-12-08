@@ -3,3 +3,8 @@
 
 ## 0.2.1 / 2015.12.8
 * 把demo放进gh-pages分支
+
+## 0.2.2 / 2015.12.8
+* update demo url
+* update demo title
+* update package url&& keywords
